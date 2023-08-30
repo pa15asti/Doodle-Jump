@@ -83,7 +83,7 @@ class App:
             pygame.display.set_caption(f'FPS: {self.clock.get_fps()}')
             if len(self.boosts) < 15:
                 for i in range(15 - len(self.boosts)):
-                    self.coord = (random.randint(80, 600 - 80), random.randint(round(self.boosts[-1][1] - 150), round(self.boosts[-1][1])))
+                    self.coord = (random.randint(80, 600 - 90), random.randint(round(self.boosts[-1][1] - 150), round(self.boosts[-1][1])))
                     self.boosts.append([self.coord[0], self.coord[1], 80])
 
             a = self.boosts.copy()
